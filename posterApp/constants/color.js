@@ -1,0 +1,1 @@
+const color = {white:'#fff', black:'#000'}
