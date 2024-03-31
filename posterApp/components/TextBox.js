@@ -1,8 +1,8 @@
 import React, {useRef, useState} from 'react';
 import {Animated, View, StyleSheet, PanResponder, Text, ImageBackground, FlatList} from 'react-native';
 
-const TextBox = () => {
-  const [text, setText] = useState("new text")
+const TextBox = (text) => {
+  const [text, setText] = useState(text);
   const pan = useRef(new Animated.ValueXY()).current;
 
   const panResponder = useRef(

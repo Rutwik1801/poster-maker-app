@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import {Animated, View, StyleSheet, PanResponder, Text, ImageBackground, FlatList} from 'react-native';
-import TextBox from './components/TextBox'
+import TextBox from './components/TextBox';
 
 const App = () => {
   const pan = useRef(new Animated.ValueXY()).current;
