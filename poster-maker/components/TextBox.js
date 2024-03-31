@@ -20,24 +20,21 @@ const TextBox = () => {
   }
 
   return (
-      <View style={styles.container}>
       <Animated.View
         style={{
           transform: [{translateX: pan.x}, {translateY: pan.y}],
         }}
         {...panResponder.panHandlers}>
-        <Text style={{display:'inline'}} onPress={handlePress}>{text}</Text>
+        <Text style={{width: 100, borderBottomWidth: 3}} onPress={handlePress}>{text}</Text>
       </Animated.View>
-      </View>
 
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    // alignItems: 'center',
-    justifyContent: 'center',
+    borderBottomWidth: 5,
+    flexWrap: "wrap"
   },
   titleText: {
     fontSize: 14,

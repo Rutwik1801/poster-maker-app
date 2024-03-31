@@ -32,14 +32,15 @@ const App = () => {
       <TextBox text="test 3" />
           </ImageBackground>
       </View>
-      {/* <View style={{flex:0.15}}>
-      <FlatList data= {
-            [1,2,3]
+      <View >
+      <FlatList  data= {
+            ["Text","Sticker","Background", "Font Family", "Application", "Back"]
           }
-          renderItem={({item}) => <Text>{item}</Text>}
-          horizontal
+          renderItem={({item}) => <Text style={{padding: 20}}>{item}</Text>}
+          horizontal={true}
+          contentContainerStyle = {{justifyContent:"space-evenly", alignItems:"center"}}
           />
-      </View> */}
+      </View>
     </View>
   );
 };
